@@ -1,0 +1,20 @@
+
+.favPlaces{
+    transition: transform .2s;
+}
+.favPlaces:hover {
+    -ms-transform: scale(0.7); /* IE 9 */
+    -webkit-transform: scale(0.7); /* Safari 3-8 */
+    transform: scale(0.7); 
+  }
+
+  .cakeHd{
+    transition: transform .2s;
+}
+.cakeHd:hover {
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Safari 3-8 */
+    transform: scale(0.9); 
+  }
+
+  
