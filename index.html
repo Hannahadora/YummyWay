@@ -19,53 +19,60 @@
     </style>
 
     <div class="cover m-0 h-screen">
-        <div class="header bg-white z-50 relative rounded-3xl rounded-t shadow flex justify-between px-5 py-5 lg:mx-28 md:mx-10 mx-2 font-sans">
+        <div class="header bg-white z-50 fixed md:w-10/12 w-full rounded-b-3xl shadow flex items-center justify-between px-7 py-3 lg:mx-28 md:mx-10 mx-2 font-sans">
             <div class="logo">
-
+                
+                  
             </div>
 
             <div class="nav1 flex items-center gap-4">
-                <a class="px-5 py-2 lg:text-lg text-red-600 border-b border-red-600" href="">Home</a>
-                <a class="px-5 py-2 lg:text-lg text-gray-700" href="">Locations</a>
+                <a class="md:block hidden px-5 py-1 lg:text-lg text-sm text-red-600 border-b border-red-600" href="">Home</a>
+                <a class="px-5 py-1 lg:text-lg text-sm text-gray-700" href="">Locations</a>
             </div>
 
-            <div class="nav2 flex items-center gap-4">
-                <a class="px-7 py-2 text-red-600 border border-red-300 hover:text-white hover:bg-red-600 rounded-full lg:text-base text-sm" href="">Login</a>
-                <a class="px-7 py-2 lg:text-base text-sm text-white bg-gray-400 hover:bg-gray-800 rounded-full" href="">Sign Up</a>
+            <div class="nav2">
+                <a class="px-5 py-1 text-red-600 border border-red-300 hover:text-white hover:bg-red-600 rounded-full lg:text-base text-sm" href="login.html">Login</a>
             </div>
         </div>
 
-    <!-- *************************************************************** -->
-        <div class="md:-mt-24 -mt-20 flex items-start gap-5">
-            <div data-aos="fade-right" class="intro md:w-1/2 md:pt-40 pt-32 lg:mx-24 md:mx-10 mx-2 font-serif" style="font-family: roos st regis;">
-                <h1 class="md:text-6xl text-3xl font-bold">Just Cakes and Ice cream For Delivery</h1>
-                <p class="md:text-xl  mt-5 font-sans">Make a special choose of your choice and get it delivered to you...</p>
+                <!-- *************************************************************** -->
+
+        <div class="flex items-start gap-5">
+            <div data-aos="fade-right" class="z-10 intro xl:w-1/3 md:w-1/2 w-2/3 md:pt-32 pt-20 lg:mx-24 mx-10 font-serif" style="font-family: roos st regis;">
+                <h1 class="xl:text-7xl lg:text-8xl md:text-6xl text-3xl font-bold">Just Cakes and Ice cream For Delivery</h1>
+                <p class="w-8/12 lg:text-2xl md:text-xl text-sm mt-5 font-sans">Make a special choose of your choice and get it delivered to you...</p>
                
-                <form class="mt-7 font-sans" action="">
-                    <div class="border rounded-full py-2">
+                <form class="mt-7 font-sans md:w-full w-10/12" action="">
+                    <div class="border rounded-full flex items-center py-2">
                         <i class="text-gray-500 mx-3 fas fa-search"></i>
-                        <input type="text" class="text-gray-500 text-sm focus:outline-none" placeholder="Search for cakes and creams...">
+                        <input type="text" class="md:w-10/12 bg-transparent text-gray-500 lg:text-base text-sm focus:outline-none" placeholder="Input item...">
                     </div> 
 
-                    <div class="mt-5 border rounded-full py-2">
+                    <div class="mt-5 border rounded-full flex items-center py-2">
                         <i class="text-gray-500 mx-3 fas fa-search-location"></i>
-                        <input type="text" class="text-gray-500 text-sm focus:outline-none" placeholder="Search for locations near you...">
+                        <input type="text" class="md:w-10/12 bg-transparent text-gray-500 lg:text-base text-sm focus:outline-none" placeholder="Input location...">
                     </div>    
                 </form>
             </div>
 
-            <div data-aos="fade-left" class="md:w-1/2 bg-red-300 rounded-l-full md:py-0 py-40">
-                <img class="md:-ml-20" src="./images/image-removebg-preview (27).png" alt="">
+            
+
+            <div data-aos="fade-left" class="absolute top-0 right-0 xl:w-1/2 lg:w-2/3 md:w-1/2 w-1/3 lg:h-full h-96 bg-red-300 md:rounded-l-full">
+                <img class="relative xl:top-40 lg:top-96 top-40 xl:right-20 lg:-right-20 sm:right-20" src="./images/image-removebg-preview (30).png" alt="">
             </div>
         </div>
     </div>
 
 
 
-    <div class="mt-10 my-20">
+<!-- *************************************************************************************** -->
+
+    <div class="my-20">
         <div class="md:w-8/12 md:rounded-r-full h-auto md:bg-blue-500 bg-black lg:px-24 md:px-10 px-2 md:py-14 py-2">
+
             <h1 class="font-bold md:text-3xl text-white mb-5" style="font-family: st roos regis;">Order from your favourite Place</h1>
-            <div data-aos="flip-left" class="loc bg-white p-5 grid md:grid-cols-8 grid-cols-5 gap-5 shadow md:-mr-40 md:ml-20">
+            
+            <div data-aos="flip-left" class="loc bg-white p-10 grid md:grid-cols-8 grid-cols-5 gap-5 shadow md:-mr-40 md:ml-20">
                 <a class="" href=""><img class="favPlaces" src="https://foodiet.netlify.app/img/peper.png" alt=""></a>
                 <a class="" href=""><img class="favPlaces" src="https://foodiet.netlify.app/img/kil.png" alt=""></a>
                 <a class="" href=""><img class="favPlaces" src="https://foodiet.netlify.app/img/ge.png" alt=""></a>
@@ -85,11 +92,12 @@
         </div>
     </div>
 
-    <div class="my-10 lg:mx-24 md:mx-10 mx-2">
+    <div class="mt-12 lg:mx-24 md:mx-10 mx-2">
+
         <div class="my-7 flex items-center justify-center lg:gap-10 md:gap-5 gap-2" style="font-family: st roos regis;">
-            <h1 class="text-xl px-7 py-2 font-medium text-white bg-red-500 rounded-full cursor-pointer">Cakes</h1>
-            <h1 class="text-xl px-7 py-2 font-medium text-gray-700 border rounded-full hover:text-red-500 cursor-pointer">Ice Cream</h1>
-            <h1 class="text-xl px-7 py-2 font-medium text-gray-700 border rounded-full hover:text-red-500 cursor-pointer">Combo</h1>
+            <h1 class="lg:text-xl md:text-base text-sm md:px-7 px-4 py-1 font-medium text-white bg-red-500 rounded-full cursor-pointer">Cakes</h1>
+            <h1 class="lg:text-xl md:text-base text-sm md:px-7 px-4 py-1 font-medium text-gray-700 border rounded-full hover:text-red-500 cursor-pointer">Ice Cream</h1>
+            <h1 class="lg:text-xl md:text-base text-sm md:px-7 px-4 py-1 font-medium text-gray-700 border rounded-full hover:text-red-500 cursor-pointer">Combo</h1>
         </div>
 
         <div class="homeRack grid lg:grid-cols-4 md:grid-cols-2 gap-5">
@@ -98,7 +106,7 @@
                 <img class="cakeHd cursor-pointer w-full rounded-xl" src="https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <div class="text-center font-sans">
                     <div class="mx-5 my-5 flex items-center justify-between">
-                        <p class="text-lg font-medium">$50.00</p>
+                        <p class="text-base">$50.00</p>
                         <div>
                             <i class="fas fa-star text-red-500"></i>
                             <i class="fas fa-star text-red-500"></i>
@@ -107,8 +115,8 @@
                             <i class="far fa-star text-red-500"></i>
                         </div>
                     </div>
-                    <p class="cakeName my-2 font-medium text-lg">Chocolate cupcake With strawberry topping</p>
-                    <button class="ORDER_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white font-medium px-10 py-2 rounded-full">Order Now</button>
+                    <p class="cakeName my-2 text-base">Chocolate cupcake <br>With strawberry topping</p>
+                    <button class="ADDED_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white px-10 py-2 rounded-full">Add To Cart</button>
                 </div>
             </div>
 
@@ -116,7 +124,7 @@
                 <img class="cakeHd cursor-pointer w-full rounded-xl" src="https://images.pexels.com/photos/4858510/pexels-photo-4858510.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <div class="text-center font-sans">
                     <div class="mx-5 my-5 flex items-center justify-between">
-                        <p class="text-lg font-medium">$50.00</p>
+                        <p class="text-base">$50.00</p>
                         <div>
                             <i class="fas fa-star text-red-500"></i>
                             <i class="fas fa-star text-red-500"></i>
@@ -125,8 +133,8 @@
                             <i class="far fa-star text-red-500"></i>
                         </div>
                     </div>
-                    <p class="cakeName my-2 font-medium text-lg">Chocolate cake with cherry and creamy topping</p>
-                    <button class="ORDER_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white font-medium px-10 py-2 rounded-full">Order Now</button>
+                    <p class="cakeName my-2 text-base">Chocolate cake <br>with cherry and creamy topping</p>
+                    <button class="ADDED_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white px-10 py-2 rounded-full">Add To Cart</button>
                 </div>
             </div>
 
@@ -134,7 +142,7 @@
                 <img class="cakeHd cursor-pointer w-full rounded-xl" src="https://images.pexels.com/photos/2955818/pexels-photo-2955818.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <div class="text-center font-sans">
                     <div class="mx-5 my-5 flex items-center justify-between">
-                        <p class="text-lg font-medium">$50.00</p>
+                        <p class="text-base">$50.00</p>
                         <div>
                             <i class="fas fa-star text-red-500"></i>
                             <i class="fas fa-star text-red-500"></i>
@@ -143,8 +151,8 @@
                             <i class="far fa-star text-red-500"></i>
                         </div>
                     </div>
-                    <p class="cakeName my-2 font-medium text-lg">Chocolate cupcake (start-shaped) with sprinklets</p>
-                    <button class="ORDER_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white font-medium px-10 py-2 rounded-full">Order Now</button>
+                    <p class="cakeName my-2 text-base">Chocolate cupcake (start-shaped) <br>with sprinklets</p>
+                    <button class="ADDED_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white px-10 py-2 rounded-full">Add To Cart</button>
                 </div>
             </div>
 
@@ -152,7 +160,7 @@
                 <img class="cakeHd cursor-pointer w-full rounded-xl" src="https://images.pexels.com/photos/1055271/pexels-photo-1055271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <div class="text-center font-sans">
                     <div class="mx-5 my-5 flex items-center justify-between">
-                        <p class="text-lg font-medium">$50.00</p>
+                        <p class="text-base">$50.00</p>
                         <div>
                             <i class="fas fa-star text-red-500"></i>
                             <i class="fas fa-star text-red-500"></i>
@@ -161,8 +169,8 @@
                             <i class="far fa-star text-red-500"></i>
                         </div>
                     </div>
-                    <p class="cakeName my-2 font-medium text-lg">Yellow cupcake With white topping</p>
-                    <button class="ORDER_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white font-medium px-10 py-2 rounded-full">Order Now</button>
+                    <p class="cakeName my-2 text-base">Yellow cupcake <br>With white topping</p>
+                    <button class="ADDED_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white px-10 py-2 rounded-full">Add To Cart</button>
                 </div>
             </div>
 
@@ -170,7 +178,7 @@
                 <img class="cakeHd cursor-pointer w-full rounded-xl" src="https://images.pexels.com/photos/1055270/pexels-photo-1055270.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <div class="text-center font-sans">
                     <div class="mx-5 my-5 flex items-center justify-between">
-                        <p class="text-lg font-medium">$50.00</p>
+                        <p class="text-base">$50.00</p>
                         <div>
                             <i class="fas fa-star text-red-500"></i>
                             <i class="fas fa-star text-red-500"></i>
@@ -179,8 +187,8 @@
                             <i class="far fa-star text-red-500"></i>
                         </div>
                     </div>
-                    <p class="cakeName my-2 font-medium text-lg">Yellow and white cupcake With Fruit topping</p>
-                    <button class="ORDER_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white font-medium px-10 py-2 rounded-full">Order Now</button>
+                    <p class="cakeName my-2 text-base">Yellow and white cupcake <br>With Fruit topping</p>
+                    <button class="ADDED_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white px-10 py-2 rounded-full">Add To Cart</button>
                 </div>
             </div>
 
@@ -188,7 +196,7 @@
                 <img class="cakeHd cursor-pointer w-full rounded-xl" src="https://images.pexels.com/photos/4692165/pexels-photo-4692165.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <div class="text-center font-sans">
                     <div class="mx-5 my-5 flex items-center justify-between">
-                        <p class="text-lg font-medium">$50.00</p>
+                        <p class="text-base">$50.00</p>
                         <div>
                             <i class="fas fa-star text-red-500"></i>
                             <i class="fas fa-star text-red-500"></i>
@@ -197,8 +205,8 @@
                             <i class="far fa-star text-red-500"></i>
                         </div>
                     </div>
-                    <p class="cakeName my-2 font-medium text-lg">Brown cake with cream and fruit droplets</p>
-                    <button class="ORDER_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white font-medium px-10 py-2 rounded-full">Order Now</button>
+                    <p class="cakeName my-2 text-base">Brown cake <br>with cream and fruit droplets</p>
+                    <button class="ADDED_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white px-10 py-2 rounded-full">Add To Cart</button>
                 </div>
             </div>
 
@@ -206,7 +214,7 @@
                 <img class="cakeHd cursor-pointer w-full rounded-xl" src="https://images.pexels.com/photos/5665639/pexels-photo-5665639.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <div class="text-center font-sans">
                     <div class="mx-5 my-5 flex items-center justify-between">
-                        <p class="text-lg font-medium">$50.00</p>
+                        <p class="text-base">$50.00</p>
                         <div>
                             <i class="fas fa-star text-red-500"></i>
                             <i class="fas fa-star text-red-500"></i>
@@ -215,8 +223,8 @@
                             <i class="far fa-star text-red-500"></i>
                         </div>
                     </div>
-                    <p class="cakeName my-2 font-medium text-lg">Dessert cocunut ball with raspberries</p>
-                    <button class="ORDER_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white font-medium px-10 py-2 rounded-full">Order Now</button>
+                    <p class="cakeName my-2 text-base">Dessert cocunut ball <br>with raspberries</p>
+                    <button class="ADDED_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white px-10 py-2 rounded-full">Add To Cart</button>
                 </div>
             </div>
 
@@ -224,7 +232,7 @@
                 <img class="cakeHd cursor-pointer w-full rounded-xl" src="https://images.pexels.com/photos/4437920/pexels-photo-4437920.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 <div class="text-center font-sans">
                     <div class="mx-5 my-5 flex items-center justify-between">
-                        <p class="text-lg font-medium">$50.00</p>
+                        <p class="text-base">$50.00</p>
                         <div>
                             <i class="fas fa-star text-red-500"></i>
                             <i class="fas fa-star text-red-500"></i>
@@ -233,8 +241,8 @@
                             <i class="far fa-star text-red-500"></i>
                         </div>
                     </div>
-                    <p class="cakeName my-2 font-medium text-lg">Brown and white biscuit cake with choco pops</p>
-                    <button class="ORDER_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white font-medium px-10 py-2 rounded-full">Order Now</button>
+                    <p class="cakeName my-2 text-base">Brown and white biscuit cake <br>with choco pops</p>
+                    <button class="ADDED_open focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-base text-white px-10 py-2 rounded-full">Add To Cart</button>
                 </div>
             </div>
     
@@ -246,12 +254,24 @@
             <i class="next Btn cursor-pointer text-3xl text-red-300 fas fa-arrow-right"></i>
         </div>
 
+    
+        <!-- ************************************************************************** -->
 
 
+        <div id="ADDED" class="mx-auto p-10 text-center shadow bg-white w-1/3 rounded-xl text-xl font-serif animate__animated animate__zoomIn animate_faster">
+            <i class="ADDED_close fas fa-times text-base absolute right-2 top-2 p-2 rounded-full bg-red-300 text-white hover:bg-blue-600"></i>
+            <p class="text-center text-md">Your order has been added to cart</p>
+            <div class="btn flex items-center justify-center gap-5 mt-5">
+                <button class="continueBtn focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-sm text-white px-5 py-2 rounded-full"><a href="#homeRack">Continue Shopping</a></button>
+                <button class="checkOutBtn focus:outline-none mb-2 bg-red-400 hover:bg-red-600 text-sm text-white px-5 py-2 rounded-full">Proceed to CheckOut</button>
+            </div>
+        </div>
 
+
+       
 <!-- *****************************ORDER POP UP****************************************** -->
 
-<div id="ORDER" class="w-8/12 p-5 mx-auto bg-white shadow animate__animated animate__zoomIn">
+<!-- <div id="ORDER" class="w-8/12 p-5 mx-auto bg-white shadow animate__animated animate__zoomIn">
 
     <div class="ORDER_close text-right">
         <i class="text-xl bg-red-300 hover:bg-blue-500 p-2 rounded-full fas fa-times"></i>
@@ -259,28 +279,28 @@
 
     <div class="flex items-start">
 
-    <div class="w-1/2 border-r p-3">
-        <p class="font-bold text-xl font-sans-serif" style="font-family: st roos regis;">Delivery Details</p>
-        <p class="text-sm font-sans text-gray-500">If you are ordering as a guest, fill the form below</p>
+        <div class="w-1/2 border-r p-3">
+            <p class="font-bold text-xl font-sans-serif" style="font-family: st roos regis;">Delivery Details</p>
+            <p class="text-sm font-sans text-gray-500">If you are ordering as a guest, fill the form below</p>
 
-        <form class="w-full mt-5 flex flex-col items-start justify-center gap-3">
-            <input type="text" placeholder="Full Name" class="fullname w-full text-sm focus:outline-none border border-gray-200 rounded-3xl px-3 py-1">
-            <input type="email" placeholder="E-mail" class="email w-full text-sm focus:outline-none border border-gray-200 rounded-3xl px-3 py-1">
-            <input type="phoneNumber" placeholder="Phone Number" class="phoneNumber w-full text-sm focus:outline-none border border-gray-200 rounded-3xl px-3 py-1">
-            <input type="address" placeholder="Delivery Address" class="address w-full text-sm focus:outline-none border border-gray-200 rounded-3xl px-3 py-1">
-        </form>
+            <form class="w-full mt-5 flex flex-col items-start justify-center gap-3">
+                <input type="text" placeholder="Full Name" class="fullname w-full text-sm focus:outline-none border border-gray-200 rounded-3xl px-3 py-1">
+                <input type="email" placeholder="E-mail" class="email w-full text-sm focus:outline-none border border-gray-200 rounded-3xl px-3 py-1">
+                <input type="phoneNumber" placeholder="Phone Number" class="phoneNumber w-full text-sm focus:outline-none border border-gray-200 rounded-3xl px-3 py-1">
+                <input type="address" placeholder="Delivery Address" class="address w-full text-sm focus:outline-none border border-gray-200 rounded-3xl px-3 py-1">
+            </form>
 
-        <div class="my-5 flex items-center gap-5">
-            <div class="w-1/2 border-b"></div>
-            <p class="text-sm font-sans text-gray-500">OR</p>
-            <div class="w-1/2 border-b"></div>
+            <div class="my-5 flex items-center gap-5">
+                <div class="w-1/2 border-b"></div>
+                <p class="text-sm font-sans text-gray-500">OR</p>
+                <div class="w-1/2 border-b"></div>
+            </div>
+
+            <div class="w-full flex items-center justify-center gap-5">
+                <button class="focus:outline-none mb-2 bg-blue-600 text-sm text-white font-medium px-5 py-2 rounded-full"><i class="text-sm mr-2 fab fa-facebook-f"></i>Facebook</button>
+                <button class="focus:outline-none mb-2 bg-white border border-red-400 text-sm text-gray-500 font-medium px-5 py-2 rounded-full"><i class="text-red-400 text-sm mr-2 far fa-envelope"></i>Gmail</button>
+            </div>
         </div>
-
-        <div class="w-full flex items-center justify-center gap-5">
-            <button class="focus:outline-none mb-2 bg-blue-600 text-sm text-white font-medium px-5 py-2 rounded-full"><i class="text-sm mr-2 fab fa-facebook-f"></i>Facebook</button>
-            <button class="focus:outline-none mb-2 bg-white border border-red-400 text-sm text-gray-500 font-medium px-5 py-2 rounded-full"><i class="text-red-400 text-sm mr-2 far fa-envelope"></i>Gmail</button>
-        </div>
-
     </div>
 
 
@@ -297,8 +317,7 @@
         </form>
     </div>
 
-</div>
-</div>
+</div> -->
 
 
 <!-- **************************************CARD POP UP************************** -->
@@ -312,73 +331,83 @@
 
 <!-- **************************************************************************************************** -->
 
-        <div class="w-5/12 rounded-l-full h-96 bg-red-300 right-0 absolute mt-32"></div>
+    
+            <div class="w-5/12 rounded-l-full h-96 bg-red-300 right-0 absolute mt-32"></div>
 
-
-
-        <div class="z-10 relative mt-32 mb-20 flex items-center gap-10">
-            <div class="w-1/2 flex lg:flex-row flex-col items-center justify-between gap-2 bg-black text-white rounded-xl p-3">
-                <i class="text-4xl text-white fas fa-motorcycle"></i>
-                <div>
-                    <h1 class="lg:text-2xl text-lg font-bold" style="font-family: st roos regis;">Make an Order</h1>
-                    <p class="font-sans lg:text-base text-sm">Get your food delivered to your door step</p>
+            <div class="z-10 relative mt-32 mb-20 flex items-center gap-10">
+                <div class="w-1/2 flex lg:flex-row flex-col items-center justify-between gap-2 bg-black text-white rounded-xl p-3">
+                    <i class="text-4xl text-white fas fa-motorcycle"></i>
+                    <div>
+                        <h1 class="lg:text-2xl text-lg font-bold" style="font-family: st roos regis;">Make an Order</h1>
+                        <p class="font-sans lg:text-base text-sm">Get your food delivered to your door step</p>
+                    </div>
+                    <button class="px-7 py-2 text-white bg-red-300 hover:bg-red-500 rounded-full">Start</button>
                 </div>
-                <button class="px-7 py-2 text-white bg-red-300 hover:bg-red-500 rounded-full">Start</button>
+
+                <div class="w-1/2 flex lg:flex-row flex-col items-center justify-between gap-2 bg-black text-white rounded-xl p-3">
+                    <i class="text-4xl text-white fas fa-home"></i>
+                    <div>
+                        <h1 class="lg:text-2xl text-lg font-bold" style="font-family: st roos regis;">Add your Location</h1>
+                        <p class="font-sans lg:text-base text-sm">Make it easier to reach out to you</p>
+                    </div>
+                    <button class="px-7 py-2 text-white bg-red-300 hover:bg-red-500 rounded-full">Start</button>
+                </div>
             </div>
 
-            <div class="w-1/2 flex lg:flex-row flex-col items-center justify-between gap-2 bg-black text-white rounded-xl p-3">
-                <i class="text-4xl text-white fas fa-home"></i>
-                <div>
-                    <h1 class="lg:text-2xl text-lg font-bold" style="font-family: st roos regis;">Add your Location</h1>
-                    <p class="font-sans lg:text-base text-sm">Make it easier to reach out to you</p>
+
+            <div class="z-10 relative bg-white p-10 mb-0 shadow text-gray-700 font-sans flex lg:flex-row flex-col items-start justify-around gap-10">
+                <div class="lg:w-1/5 text-center">
+                    <h1 class="logo"></h1>
+                    <p class="text-sm text-gray-700 font-sans">
+                        Tasty cakes and Creamy ice available to be delivered to your door step.
+                    </p>
+                    <div class="my-7 flex items-center justify-center text-lg gap-3">
+                        <a href=""><i class="hover:text-red-500 fab fa-facebook-f"></i></a>
+                        <a href=""><i class="hover:text-red-500 fab fa-twitter"></i></a>
+                        <a href=""><i class="hover:text-red-500 fab fa-whatsapp"></i></a>
+                        <a href=""><i class="hover:text-red-500 fab fa-instagram"></i></a>
+                        <a href=""><i class="hover:text-red-500 fab fa-youtube"></i></a>
+                        <a href=""><i class="hover:text-red-500 fab fa-linkedin"></i></a>
+                    </div>
                 </div>
-                <button class="px-7 py-2 text-white bg-red-300 hover:bg-red-500 rounded-full">Start</button>
+
+                <div class="">
+                    <div class="flex flex-col items-start gap-2 font-sans">
+                        <h1 class="font-bold text-base" style="font-family: st roos regis;">Ordering online</h1>                
+                        <a class="text-sm hover:text-red-500" href="">Order Status</a>
+                        <a class="text-sm hover:text-red-500" href="">Shipping & Delivery</a>
+                        <a class="text-sm hover:text-red-500" href="">Returns</a>
+                        <a class="text-sm hover:text-red-500" href="">Payment Option</a>
+                        <a class="text-sm hover:text-red-500" href="">Contact us</a>
+                    </div>
+                </div>
+
+                <div class="">
+                    <div class="flex flex-col items-start gap-2 font-sans">
+                        <h1 class="font-bold text-base" style="font-family: st roos regis;">Information</h1>                
+                        <a class="text-sm" href="">Hotline:<span class="text-blue-600">+23400008889</span></a>
+                        <a class="text-sm" href="">Office:<span class="text-blue-600">+23456700009</span></a>
+                        <a class="text-sm hover:bg-white hover:shadow px-7 py-2 rounded-full" href="">store@xyz.com</a>
+                        <form class="mt-5">
+                            <input type="email" placeholder="someone@gmail.com" class="text-sm border focus:outline-none py-1 pl-2">
+                            <a class="text-sm bg-red-300 shadow px-7 py-1" href="">Subscribe</a>
+                            <p class="text-xs font-medium">(To get current info and follow our kitchen blog)</p>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
-
-        <div class="z-10 relative footer bg-white p-10 mb-0 shadow text-gray-700 font-sans flex lg:flex-row flex-col items-start justify-around gap-10">
-            <div class="lg:w-1/5 text-center">
-                <h1 class="logo"></h1>
-                <p class="text-sm text-gray-700 font-sans">
-                    Tasty cakes and Creamy ice available to be delivered to your door step.
-                </p>
-                <div class="my-7 flex items-center justify-center text-lg gap-3">
-                    <a href=""><i class="hover:text-red-500 fab fa-facebook-f"></i></a>
-                    <a href=""><i class="hover:text-red-500 fab fa-twitter"></i></a>
-                    <a href=""><i class="hover:text-red-500 fab fa-whatsapp"></i></a>
-                    <a href=""><i class="hover:text-red-500 fab fa-instagram"></i></a>
-                    <a href=""><i class="hover:text-red-500 fab fa-youtube"></i></a>
-                    <a href=""><i class="hover:text-red-500 fab fa-linkedin"></i></a>
-                </div>
-            </div>
-
-            <div class="">
-                <div class="flex flex-col items-start gap-2 font-sans">
-                    <h1 class="font-bold text-base" style="font-family: st roos regis;">Ordering online</h1>                
-                    <a class="text-sm hover:text-red-500" href="">Order Status</a>
-                    <a class="text-sm hover:text-red-500" href="">Shipping & Delivery</a>
-                    <a class="text-sm hover:text-red-500" href="">Returns</a>
-                    <a class="text-sm hover:text-red-500" href="">Payment Option</a>
-                    <a class="text-sm hover:text-red-500" href="">Contact us</a>
-                </div>
-            </div>
-
-            <div class="">
-                <div class="flex flex-col items-start gap-2 font-sans">
-                    <h1 class="font-bold text-base" style="font-family: st roos regis;">Information</h1>                
-                    <a class="text-sm" href="">Hotline:<span class="text-blue-600">+23400008889</span></a>
-                    <a class="text-sm" href="">Office:<span class="text-blue-600">+23456700009</span></a>
-                    <a class="text-sm hover:bg-white hover:shadow px-7 py-2 rounded-full" href="">store@xyz.com</a>
-                    <form class="mt-5">
-                        <input type="email" placeholder="someone@gmail.com" class="text-sm border focus:outline-none py-1 pl-2">
-                        <a class="text-sm bg-red-300 shadow px-7 py-1" href="">Subscribe</a>
-                        <p class="text-xs font-medium">(To get current info and follow our kitchen blog)</p>
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -398,7 +427,7 @@
 
 
 
-    <script src="js/ordernow.js"></script>
+    <script src="js/addtocart.js"></script>
     <script src="js/main.js"></script>
 
 
