@@ -10,22 +10,22 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body style="font-family: poppins;">
-    <div class="cover m-0 lg:h-screen">
+    <div class="cover m-0 lg:h-screen" style="font-family: poppins;">
         <div class="header bg-white z-50 fixed md:w-10/12 w-full rounded-b-3xl shadow flex items-center justify-between px-7 py-3 lg:mx-28 md:mx-10 mx-2 font-sans">
             <div class="logo">
                 
                   
             </div>
 
-            <div class="nav1 flex items-center gap-4">
+            <div class="nav1 flex items-center gap-4 font-sans" style="font-family: poppins;">
                 <a class="md:block hidden px-5 py-1 lg:text-lg text-sm text-gray-700" href="index.html">Home</a>
                 <a class="px-5 py-1 lg:text-lg text-sm text-gray-700" href="">Locations</a>
             </div>
 
-            <div class="nav2">
+            <div class="nav2" style="font-family: poppins;">
                 <a class="px-5 py-1 text-white bg-red-300 rounded-full lg:text-base text-sm" href="">Login</a>
             </div>
         </div>
@@ -36,26 +36,19 @@
                 <div class="relative xl:top-40 lg:top-72 md:top-40 top-24 mx-auto xl:w-1/2 lg:w-8/12 sm:w-10/12 w-11/12 bg-white shadow rounded-lg sm:p-7 p-3 z-40 animate__animated animate__zoomIn animate__faster">
 
                     <h1 class="text-xl font-bold font-serif my-5" style="font-family: st roos regis;">Welcome Back</h1>
-                    <form action="" class="">
-                        <input type="text" name="userDetail" required class="p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Email/Username">
-                        <input type="password" name="passD" required class="my-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Password"><i class="fas fa-eye-slash -ml-10 text-gray-500 cursor-pointer"></i>
+                    <form id="formVal" action="" class="flex flex-col">
+                        <input type="text" name="userD" id="userDetail" class="p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Email/Username">
+                        <div class="flex items-center w-full"><input type="password" name="passD" id="passDetail" class="my-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Password"><i class="fas fa-eye-slash -ml-10 text-gray-500 cursor-pointer"></i></div>
+                        <div id="loginError" class="mb-2 font-sans text-sm text-red-500" style="font-family: poppins;"> 
+                        </div>
+                        <div class="flex items-center justify-between font-sans text-xs" style="font-family: poppins;"> 
+                            <div><input class="w-3 cursor-pointer" type="checkbox" name="remain"> <label for="remain">Keep me logged in</label></div>
+                            <p class="text-blue-600">Forgot password</p>
+                        </div>
+                        <div class="text-center my-4">
+                            <input type="submit" value="Login" class="loginBtn focus:outline-none bg-red-400 hover:bg-red-600 xl:text-base text-sm text-white px-14 py-2 rounded-full">
+                        </div>
                     </form>
-
-                    <div class="loginError mb-2 font-sans text-sm text-red-500">
-                        
-                    </div>
-
-                    <div class="flex items-center justify-between font-sans text-xs">
-                        <form >
-                            <input class="w-3 cursor-pointer" type="checkbox" name="remain"> <label for="remain">Keep me logged in</label>
-                        </form>
-
-                        <p class="text-blue-600">Forgot password</p>
-                    </div>
-
-                    <div class="text-center my-4">
-                        <button onclick="valForm()" class="loginBtn focus:outline-none bg-red-400 hover:bg-red-600 text-sm text-white px-12 py-2 rounded-full">Login</button>
-                    </div>
 
                     <div class="my-3 flex items-center gap-5">
                         <div class="w-1/2 border-b"></div>

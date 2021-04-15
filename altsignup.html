@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d2e0cde1e0.js" crossorigin="anonymous"></script>
+    <link href="//db.onlinewebfonts.com/c/d51960ec2325752ed629b83e3f40c4c4?family=Roos+St+Regis+Text" rel="stylesheet" type="text/css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body style="font-family: poppins;">
+
+    <div class="cover m-0 lg:h-screen">
+        <div class="header bg-white z-50 fixed md:w-10/12 w-full rounded-b-3xl shadow flex items-center justify-between px-7 py-3 lg:mx-28 md:mx-10 mx-2 font-sans">
+            <div class="logo">
+                
+                  
+            </div>
+
+            <div class="nav1 flex items-center gap-4">
+                <a class="md:block hidden px-5 py-1 lg:text-lg text-sm text-gray-700" href="index.html">Home</a>
+                <a class="px-5 py-1 lg:text-lg text-sm text-gray-700" href="">Locations</a>
+            </div>
+
+            <div class="nav2">
+                <a class="px-5 py-1 text-white bg-red-300 rounded-full lg:text-base text-sm" href="">Login</a>
+            </div>
+        </div>
+
+                <!-- *************************************************************** -->
+                <div data-aos="lg:fade-left" class="absolute top-0 right-0 xl:w-1/2 lg:w-2/3 md:w-1/2 w-1/3 lg:h-full h-full bg-red-300 md:rounded-l-full rounded-bl-full"></div>
+                
+                <div class="relative xl:top-32 lg:top-60 md:top-40 top-24 mx-auto xl:w-1/2 lg:w-8/12 sm:w-10/12 w-11/12 bg-white shadow rounded-lg sm:p-7 p-3 z-40 animate__animated animate__zoomIn animate__faster">
+
+                  
+                <h1 class="text-xl font-bold font-serif mb-2" style="font-family: st roos regis;">Create an Restaurant Account</h1>
+                        
+                    <form action="" class="flex items-start justify-center gap-2">
+                        <div class="w-1/2">
+                            <input type="text" name="fullName" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Restaurant Name">
+                            <input type="address" name="resAddress" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Restaurant Address">
+                            <input type="text" name="fullName" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Full Name">
+                            <input type="email" name="email" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Email">
+                            <input type="phoneNumber" name="phoneNumber" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Phone Number">
+                            <input type="address" name="address" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Address">
+                        </div>
+                        <div class="w-1/2">
+                            <div class="error">
+
+                            </div>
+                            <div class="w-full"><input type="password" name="password" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Password"><i class="fas fa-eye-slash -ml-10 text-gray-500 cursor-pointer"></i></div>
+                            <input type="password" name="confirmPassword" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Confirm Password">
+                            <input type="number" name="number" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="No. of Locations">
+                            <input type="text" name="type" required class="mb-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Type of Establishment">
+                            <div class="mt-7 text-center w-full">
+                                <label for="fileBox" class="fileLab p-7 rounded-lg text-gray-500 cursor:pointer bg-transparent border border-dotted focus:outline-none w-full"><i class="fas fa-cloud-upload-alt mr-2"></i>Upload Logo of Establishment</label>
+                                <input type="file" name="fileBox" id="fileBox" class="p-4 hidden cursor:pointer bg-transparent border border-dotted focus:outline-none w-full">
+                            </div>
+                            </div>
+                    </form>
+
+                        <form class="font-sans text-xs">
+                            <input class="w-3 cursor-pointer" type="checkbox" name="agree"> <label for="agree">I agree with the <a href="" class="text-blue-600">Privacy Terms</a></label>
+                        </form>
+
+
+                    <div class="text-center my-4">
+                        <button class="signupBtn focus:outline-none bg-red-400 hover:bg-red-600 text-sm text-white px-12 py-2 rounded-full">Sign Up</button>
+                    </div>
+
+                    
+
+
+                    <div class="mt-5 font-sans flex items-center justify-center gap-5 text-base">
+                        <p class="font-serif">Already have an account</p>
+                        <a class="px-5 py-1 focus:outline-none bg-white border border-red-300 hover:border-red-600 text-sm text-red-500 sm:px-12 px-7 py-2 rounded-full" href="login.html">Login</a>
+                    </div>
+                </div>     
+        
+                  
+                
+
+
+
+                <script src="js/main.js"></script>
+
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+           <script>
+               AOS.init({
+                   offset: 400,
+                   duration: 2000
+               });
+             </script>>
+    
+</body>
+</html>
