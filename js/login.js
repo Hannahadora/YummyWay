@@ -1,29 +1,40 @@
 // const form = document.getElementsByTagName('form');
-const bigForm = document.querySelector("#formVal");
-const user = document.querySelector('#userDetail');
-const pass = document.querySelector('#passDetail');
+const loginForm = document.querySelector("#loginForm");
+const user = document.querySelector('#username');
+const password = document.querySelector('#password');
 const remain = document.getElementsByName('remain');
 const loginError = document.querySelector('#loginError');
-const loginBtn = document.getElementsByClassName('loginBtn');
+const loginBtn = document.querySelector('#loginBtn');
 
-const passRegEx = /^[a-zA-Z0-9]{8, 16}$/
+const passRegEx =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;;
 
-bigForm.addEventListener('submit', valForm);
+    loginForm.addEventListener('submit', valForm);
 
-    function valForm(e) {
-         if (user.value === '') {
-            loginError.innerText = 'Please Input Username'
-        } if (pass.value === '') {
-            loginError.innerText = 'Please Input Password'
-        } if (pass.value !== passRegEx ) {
-            loginError.innerText = 'Password must be above 8 and below 16 with an uppercase, lowercase and symbol'
-        } else {
-            windows.location.href = 'account.html'
-         } if (user.value === '' && pass.value === '') {
-            loginError.innerText = 'Please input Details'
+    function valForm() {
+
+        if (user.value === '' || password.value === '') {
+            loginError.innerText = 'Invalid login details';
         }
-        
+     
+       else{
+           alert(`Hello ${user.value}, welcome to YummyWay`)
+       }
 
-       
-        e.preventDefault();
+       location.href = 'index.html';
     }
+
+
+
+
+
+
+
+    const togglePassword = document.getElementById('togglePassword');
+
+    togglePassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.classList.toggle('fa-eye-slash');
+        });

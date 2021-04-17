@@ -41,27 +41,34 @@
                         <button class="focus:outline-none bg-gray-500 hover:bg-gray-600 text-sm text-white px-12 py-2 rounded-full"><a href="altsignup.html">Sign Up as a restaurant owner</a></button>
                     </div>
                         
-                    <form action="" class="">
-                        <input type="text" name="fullName" required class="p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Full Name">
+
+                    
+                    <form action="" class="" id="signupForm">
+                        <input type="text" name="fullName" id="fullName" required class="p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Full Name">
                         <div class="flex md:flex-row flex-col items-center gap-2 w-full">
-                            <input type="text" name="email" required class="my-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent md:w-1/2 w-full text-sm" placeholder="Email">
-                            <input type="text" name="phoneNumber" required class="p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent md:w-1/2 w-full text-sm" placeholder="Phone Number">
+                            <input type="text" name="email" id="email" required class="my-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent md:w-1/2 w-full text-sm" placeholder="Email">
+                            <input type="text" name="phoneNumber" id="phoneNumber"  class="p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent md:w-1/2 w-full text-sm" placeholder="Phone Number">
                         </div>
                         <div class="flex md:flex-row flex-col items-center gap-2">
-                            <div class="error"></div>
-                            <div class="md:w-1/2 w-full"><input type="password" name="password" required class="my-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Password"><i class="fas fa-eye-slash -ml-10 text-gray-500 cursor-pointer"></i></div>
-                            <input type="password" name="confirmPassword" required class="p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent md:w-1/2 w-full text-sm" placeholder="Confirm Password">
+                            <div class="md:w-1/2 w-full"><input type="password" name="password" id="password" required class="my-2 p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent w-full text-sm" placeholder="Password"><i id="togglePassword" class="fas fa-eye -ml-10 text-gray-500 cursor-pointer"></i></div>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required class="p-2 rounded-lg focus:outline-none border text-gray-700 bg-transparent md:w-1/2 w-full text-sm" placeholder="Confirm Password">
+                        </div>
+                        <div id="signupError" class="font-serif text-red-500" style="font-family: roos st regis;">
+                        </div>
+                        <div class="font-sans text-xs">
+                            <input class="w-3 cursor-pointer" id="agree" type="checkbox" name="agree" required> <label for="agree">I agree with the <a href="" class="text-blue-600">Privacy Terms</a></label>
+                        </div>
+                        <div class="text-center my-4">
+                            <input type="submit" value="SignUp" id="signupBtn" class="focus:outline-none bg-red-400 hover:bg-red-600 text-sm text-white px-12 py-2 rounded-full">
                         </div>
                     </form>
 
-                        <form class="font-sans text-xs">
-                            <input class="w-3 cursor-pointer" type="checkbox" name="agree"> <label for="agree">I agree with the <a href="" class="text-blue-600">Privacy Terms</a></label>
-                        </form>
 
 
-                    <div class="text-center my-4">
-                        <button class="signupBtn focus:outline-none bg-red-400 hover:bg-red-600 text-sm text-white px-12 py-2 rounded-full">Sign Up</button>
-                    </div>
+
+                        
+
+                    
 
                     
 
@@ -77,6 +84,7 @@
 
 
 
+<script src="js/signup.js"></script>
 
                 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
